@@ -37,13 +37,6 @@
       margin: 0 8px;
     }
 
-    &:hover {
-      transform: translateY(-1px);
-      box-shadow: 0 4px 12px rgba(9, 55, 84, 0.12);
-      border-color: var(--darkblue);
-    }
-
-
     h3 {
       line-height: 1.2em;
       font-size: 1.1rem;
@@ -80,6 +73,19 @@
       border-radius: 4px;
       font-weight: 600;
       font-style: normal;
+      text-decoration: none;
+      cursor: pointer;
+      transition: background-color 0.2s ease;
+    }
+
+    a em {
+      color: white;
+      text-decoration: none;
+    }
+
+    a:hover em {
+      background: var(--darkblue);
+      text-decoration: underline;
     }
 
     h3 code {
