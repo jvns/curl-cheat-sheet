@@ -96,35 +96,43 @@
           </div>
           <div class="item">
             <h3>Show response headers</h3>
-            <code>curl <span class="highlight">-i</span> https://example.com</code>
+            <code>curl <em>-i</em> https://example.com</code>
           </div>
 
           <div class="item">
             <h3>Follow redirects</h3>
-            <code>curl <span class="highlight">-L</span> https://example.com</code>
+            <code>curl <em>-L</em> https://example.com</code>
           </div>
 
           <div class="item">
             <h3>Make a HEAD request</h3>
-            <code>curl <span class="highlight">-I</span> https://example.com</code>
+            <code>curl <em>-I</em> https://example.com</code>
           </div>
 
           <div class="item">
             <h3>Output to a file</h3>
-            <code>curl <span class="highlight">-o</span> out.html https://example.com/ </code>
+            <code>curl <em>-o</em> out.html https://example.com/ </code>
           </div>
 
           <div class="item">
             <h3>Set a header</h3>
-            <code>curl https://pages.github.io <span class="highlight">-H</span>
+            <code>curl https://pages.github.io <em>-H</em>
               <span class="nobreak">"Host: raytracing.github.io"</span>
             </code>
           </div>
 
           <div class="item">
             <h3>Override DNS resolution</h3>
-            <code>curl example.com <span class="highlight">--resolve</span> <span
-                class="nobreak">example.com:443:23.220.75.245</span></code>
+            <code>curl example.com <em>--resolve</em> <span class="nobreak">example.com:443:23.220.75.245</span></code>
+          </div>
+
+          <div class="item">
+            <h3>POST some JSON</h3>
+            <code>
+              curl -v httpbin.io/post
+              <span class="nobreak"><em>-d</em> '{"key":"value"}'</span>
+              <span class="nobreak">-H "Content-Type: application/json"</span>
+            </code>
           </div>
         </section>
       </main>
