@@ -12,14 +12,15 @@
 
   .item {
     background: var(--bg-color);
-    padding: 10px;
+    padding: 10px 15px;
+    padding-top: 12px;
     border-radius: 10px;
     border: 1px solid var(--darkblue);
     display: flex;
     font-size: 1rem;
     flex-direction: column;
     gap: 5px;
-    background: #fffaff;
+    /* background: #fffaff; */
 
     p {
       font-size: 1rem;
@@ -29,7 +30,8 @@
     h3 {
       line-height: 1em;
       font-size: 1.1rem;
-      margin: .5rem 0;
+      margin: 0;
+      margin-bottom: .5rem;
       font-weight: 600;
     }
 
@@ -41,11 +43,18 @@
     code {
       /* background: var(--callout-color); */
       color: var(--font-color);
-      background: var(--light-pink);
+      color: #803C7C;
+      color: #A02761;
+      /* background: var(--light-pink); */
       /* border-radius: 3px; */
-      padding: 4px 8px;
       font-family: Courier, monospace;
       margin-bottom: 0;
+      line-height: 1.5rem;
+    }
+
+    .highlight {
+      padding: .25rem .5rem;
+      outline: 1px solid #A02761;
     }
 
     h3 code {
@@ -82,7 +91,6 @@
       margin-bottom: .5rem;
       font-size: 1.3rem;
       line-height: 1.2;
-      color: var(--darkblue);
     }
   }
 }
