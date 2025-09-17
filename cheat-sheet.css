@@ -69,6 +69,8 @@
       border-radius: 6px;
       border: 1px solid rgba(9, 55, 84, 0.15);
       font-size: 1rem;
+      text-indent: -1.5em;
+      padding-left: calc(12px + 1.5em);
     }
 
     .highlight {
@@ -90,6 +92,10 @@
       display: block;
       margin-left: 30px;
       font-family: sans-serif;
+    }
+
+    .nobreak {
+      white-space: nowrap;
     }
   }
 

@@ -111,7 +111,20 @@
 
           <div class="item">
             <h3>Output to a file</h3>
-            <code> curl <span class="highlight">-o</span> out.html https://example.com/ </code>
+            <code>curl <span class="highlight">-o</span> out.html https://example.com/ </code>
+          </div>
+
+          <div class="item">
+            <h3>Set a header</h3>
+            <code>curl https://pages.github.io <span class="highlight">-H</span>
+              <span class="nobreak">"Host: raytracing.github.io"</span>
+            </code>
+          </div>
+
+          <div class="item">
+            <h3>Override DNS resolution</h3>
+            <code>curl example.com <span class="highlight">--resolve</span> <span
+                class="nobreak">example.com:443:23.220.75.245</span></code>
           </div>
         </section>
       </main>
